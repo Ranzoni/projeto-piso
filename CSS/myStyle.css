@@ -1,0 +1,11 @@
+header {
+	width: 100%;
+	background-image: url('../Images/header.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.titleLine {
+	color: yellow;
+}

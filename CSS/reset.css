@@ -1,0 +1,240 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+	font-family: "Orbitron"	, sans-serif;
+}
+
+header {
+	width: 100%;
+	height: 152px;
+	background-image: url('../Images/bg.jpg');
+	text-align: center;
+}
+
+#mask {
+	position: absolute;
+	width: 100%;
+	height: 102px;
+	margin-top: 10px;
+	background-image: url('../Images/mask.png');
+	background-size: 262px 102px;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 1;
+}
+
+.titleWrapper {
+	width: 100%;
+	position: absolute;
+	z-index: 2;
+}
+
+.titleLine {
+	padding-top: 10px;
+	color: yellow;
+	font-weight: bold;
+	text-shadow: -3px 0 #900, 0 3px #900;
+}
+
+.big {
+	font-size: 65px;
+}
+
+#pageBody {
+	width: 100%;
+	height: 3115px;
+	background-image: url('../Images/chain.png');
+	background-repeat: repeat;
+	box-shadow: 0px 0px 10px  #888888;
+	padding-top: 45px;
+}
+
+#heroCrud {
+	width: 1000px;
+	height: 40px;
+	background-image: url('../Images/metalic.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0 auto;
+	padding: 30px;
+	box-shadow: 0px 0px 10px  #888888;
+	font-weight: bold;
+	font-size: 25px;
+	color: #bbb;
+	text-shadow: -1px 0 gray, 0 2px gray;
+	text-align: center;
+}
+
+#heroCrud a {
+	font-weight: bold;
+	font-size: 20px;
+	color: #bbb;
+	text-shadow: -1px 0 gray, 0 2px gray;
+}
+
+#heroCrud a:link {
+	text-decoration: none;
+	list-style: none;
+}
+
+#heroCrud a:hover {
+	color: #090;
+	text-shadow: -1px 0 #ff0, 0 2px #ff0;
+	animation: blinker 0.3s infinite;
+}
+
+#heroCrud input {
+	background-color: #bbb;
+	font-family: "Orbitron"	, sans-serif;
+}
+
+#heroCrud select {
+	background-color: #bbb;
+	font-family: "Orbitron"	, sans-serif;
+}
+
+@keyframes blinker {
+	50% {
+		opacity: 0.3;
+	}
+}
+
+#heroGrid {
+	width: 1004px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.heroBox {
+	box-shadow: 0px 0px 10px  #888888;
+	width: 237px;
+	height: 465px;
+	float: left;
+	margin-top: 25px;
+	margin-left: 10px;
+	background-color: white;
+	font-size: 13px;
+	border: 1.5px solid black;
+}
+
+.heroBox img.heroPicture {
+    margin: 0 auto;
+	width: 234px;
+	border: 1.5px solid black;
+}
+
+.heroBox span.heroName {
+	float: left;
+	width: 100%;
+	margin-top: 10px;
+	margin-left: 5px;
+	padding-bottom: 10px;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.heroBox span.heroAttributes {
+	width: 130px;
+	margin-left: 5px;
+	float: left;
+}
+
+.heroBox span.heroAttributesValues {
+	float: left;
+}
+
+.heroBox:hover {
+	position: relative;
+	background-color: yellow;
+	-webkit-animation-name: inclination;
+	-webkit-animation-duration: 0.4s;
+	-webkit-animation-fill-mode: both;
+	cursor: pointer;
+}
+
+@-webkit-keyframes inclination {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(-5deg);
+	}
+}
+
+.heroBox:hover:before {
+	content: url(../Images/light.png);
+    position: absolute;    
+    left: -58px;
+    top: -25px;
+    -webkit-animation: rotation 1.4s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+	from {
+			-webkit-transform: rotate(0deg);
+	}
+	to {
+			-webkit-transform: rotate(359deg);
+	}
+}
+
+
+ol, ul {
+	
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+footer {
+	width: 100%;
+	height: 200px;
+	background-image: url('../Images/footer.jpg');
+	background-size: cover;
+	color: white;
+	text-shadow: -3px 0 #900, 0 3px #900;
+	font-size: 25px;
+	padding-top: 170px;
+}
+
+footer span {
+	font-size: 30px;
+}
